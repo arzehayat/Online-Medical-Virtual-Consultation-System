@@ -17,6 +17,16 @@ h3 {
     margin-top: 20px;
 }
 
+input[readonly] {
+        background-color: #f0f0f0; /* Light gray background */
+        color: #333; /* Dark gray text for contrast */
+        border: 1px solid #ccc; /* Subtle border */
+        cursor: not-allowed; /* Indicate non-editable */
+    }
+    input[readonly]:focus {
+        outline: none; /* Remove focus outline for readonly */
+    }
+
 /* Navbar styles */
 .navbar {
     background-color: #87ceeb; /* Light blue navbar */

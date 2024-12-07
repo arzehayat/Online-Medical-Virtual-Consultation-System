@@ -6,4 +6,6 @@ public interface Doctor_Service {
 	
 	public String DoctorRegistration(doctor d);
 	public doctor checkDoctorLogin(String email,String password);
+	
+	public String updatedoctor(doctor doctor);
 }

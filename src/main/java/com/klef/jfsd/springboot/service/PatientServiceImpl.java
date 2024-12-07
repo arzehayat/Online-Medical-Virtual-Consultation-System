@@ -25,6 +25,23 @@ public class PatientServiceImpl implements Patient_Service {
 		return patient_Repository.checkPatientLogin(email, password);
 	}
 
+	@Override
+	public String updatepatient(patient patient) {
+		
+		patient p=patient_Repository.findById(patient.getId()).get();
+		
+		p.setName(patient.getName());
+		p.setDob(patient.getDob());
+		p.setGender(patient.getGender());
+		p.setPassword(patient.getPassword());
+		p.setMedicalhistory(patient.getMedicalhistory());
+		
+		patient_Repository.save(p);
+		
+		return "Patient Profile Updated Successfully";
+		
+	}
+
 
 
 

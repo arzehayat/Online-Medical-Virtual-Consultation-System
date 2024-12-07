@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.klef.jfsd.springboot.model.doctor;
 import com.klef.jfsd.springboot.service.Doctor_Service;
 
+import ch.qos.logback.core.model.Model;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
@@ -121,6 +122,51 @@ public class DoctorController {
 		
 		return mv;
 		
+	}
+	
+	@PostMapping("updatedoc")
+	public ModelAndView updatedoc(HttpServletRequest request) {
+		
+		ModelAndView mv=new ModelAndView();
+		
+		int id=Integer.parseInt(request.getParameter("did"));
+		String name=request.getParameter("dname");
+		String gender=request.getParameter("dgender");
+		String dob=request.getParameter("ddob");
+		String password=request.getParameter("dpwd");
+		String contact=request.getParameter("dcontact");
+		String qualification=request.getParameter("dqualification");
+		Integer experience=Integer.parseInt(request.getParameter("dexperience"));
+		String status="Registred";
+		
+		doctor d=new doctor();
+		
+		d.setId(id);
+		d.setName(name);
+		d.setGender(gender);
+		d.setDob(dob);
+		d.setPassword(password);
+		d.setContact(contact);
+		d.setQualification(qualification);
+		d.setExperience(experience);
+		d.setStatus(status);
+		
+		
+		doctor_Service.updatedoctor(d);
+		String message=doctor_Service.updatedoctor(d);
+		
+		mv.setViewName("doctorlogin");	
+		mv.addObject("message",message);
+		
+		return mv;
+	}
+	
+	@GetMapping("updatepatient")
+	public ModelAndView updatepatient() {
+		
+		ModelAndView mv=new ModelAndView("updatepatient");
+		
+		return mv;
 	}
 	
 	

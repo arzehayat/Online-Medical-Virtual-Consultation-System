@@ -125,4 +125,44 @@ public class PatientController {
 	}
 	
 	
+	@GetMapping("updateprofile")
+	public ModelAndView updatepatient() {
+		
+		ModelAndView mv=new ModelAndView("updatepatient");
+		return mv;
+	}
+	
+	@PostMapping("updatepat")
+	public ModelAndView updatepat(HttpServletRequest request) {
+		
+		int id=Integer.parseInt(request.getParameter("pid"));
+		String name=request.getParameter("pname");
+		String gender=request.getParameter("pgender");
+		String dob=request.getParameter("pdob");
+		String pwd=request.getParameter("ppwd");
+		String contact=request.getParameter("pcontact");
+		String medicalhistory=request.getParameter("pmedicalhistory");
+		
+		patient p=new patient();
+		
+		p.setId(id);
+		p.setName(name);
+		p.setGender(gender);
+		p.setDob(dob);
+		p.setPassword(pwd);
+		p.setContact(contact);
+		p.setMedicalhistory(medicalhistory);
+		
+		String message=patient_Service.updatepatient(p);
+		
+		ModelAndView mv=new ModelAndView();
+		mv.setViewName("patientlogin");
+		mv.addObject("message", message);
+		
+		return mv;
+	}
+	
+	
+	
+	
 }

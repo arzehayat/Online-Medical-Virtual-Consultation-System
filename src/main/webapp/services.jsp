@@ -127,7 +127,7 @@
                     <div class="card-content">
                         <h3>Online Consultation</h3>
                         <p>Connect with top doctors from the comfort of your home through video calls.</p>
-                        <a href="consultation.jsp">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                     <div class="card-content">
                         <h3>Appointment Booking</h3>
                         <p>Book your appointments seamlessly with a few clicks.</p>
-                        <a href="appointments.jsp">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
 
@@ -147,7 +147,7 @@
                     <div class="card-content">
                         <h3>Online Pharmacy</h3>
                         <p>Order medicines online and get them delivered to your doorstep.</p>
-                        <a href="pharmacy.jsp">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
 
@@ -157,7 +157,7 @@
                     <div class="card-content">
                         <h3>Diagnostic Tests</h3>
                         <p>Schedule diagnostic tests and get accurate results quickly.</p>
-                        <a href="diagnostics.jsp">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
 
@@ -167,11 +167,12 @@
                     <div class="card-content">
                         <h3>Health Packages</h3>
                         <p>Choose from a variety of affordable health checkup packages.</p>
-                        <a href="healthpackages.jsp">Learn More</a>
+                        <a href="#">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <%@include file="footer.jsp" %>
 </body>
 </html>
