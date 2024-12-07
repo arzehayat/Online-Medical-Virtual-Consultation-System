@@ -15,6 +15,9 @@ public interface Admin_Service {
 	public long doctorcount();
 	public String deletedoc(int eid);
 	public String deletepat(int eid);
+	
+	public doctor displaydoctorbyid(int id);
+	public patient displaypatientbyid(int id);
 
 
 }

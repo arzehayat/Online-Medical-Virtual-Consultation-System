@@ -47,6 +47,54 @@ public class AdminController {
 		return mv;
 	}
 	
+	@GetMapping("viewdoctorbyid")
+	public ModelAndView viewdoctorbyid() {
+		
+		ModelAndView mv=new ModelAndView();
+
+		List<doctor> doctors=admin_Service.viewalldoctors();
+		mv.addObject("doctorslist",doctors); 
+		
+		mv.setViewName("viewdoctorbyid");
+		return mv;
+	}
+	
+	@GetMapping("viewpatientbyid")
+	public ModelAndView viewpatientbyid() {
+		
+		ModelAndView mv=new ModelAndView();
+
+		List<patient> patients=admin_Service.viewallpatients();
+		mv.addObject("patientslist",patients); 
+		
+		mv.setViewName("viewpatientbyid");
+		return mv;
+	}
+	
+	@PostMapping("displaydoctor")
+	public ModelAndView displaydoctor(HttpServletRequest request) {
+		
+		int id=Integer.parseInt(request.getParameter("id"));
+		
+		doctor d=admin_Service.displaydoctorbyid(id);
+		ModelAndView mv=new ModelAndView("displaydoctor");
+		mv.addObject("doctor",d);
+		
+		return mv;
+	}
+	
+	@PostMapping("displaypatient")
+	public ModelAndView displaypatient(HttpServletRequest request) {
+		
+		int id=Integer.parseInt(request.getParameter("id"));
+		
+		patient p=admin_Service.displaypatientbyid(id);
+		ModelAndView mv=new ModelAndView("displaypatient");
+		mv.addObject("patient",p);
+		
+		return mv;
+	}
+	
 	
 	@GetMapping("adminlogin")
 	public ModelAndView adminlogin() {

@@ -63,4 +63,16 @@ public class AdminServiceImpl implements Admin_Service {
 		patient_Repository.deleteById(eid);
 		return "Deleted Successfully";
 	}
+
+	@Override
+	public doctor displaydoctorbyid(int id) {
+		
+		return doctor_Repository.findById(id).get();
+	}
+
+	@Override
+	public patient displaypatientbyid(int id) {
+
+		return patient_Repository.findById(id).get();
+	}
 }

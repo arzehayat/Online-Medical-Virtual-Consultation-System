@@ -11,6 +11,8 @@
 <a href="/">Home</a>&nbsp;&nbsp;
 <a href="aboutus">About Us</a>&nbsp;&nbsp;
 <a href="contact">Contact Us</a>&nbsp;&nbsp;
+<a href="services.jsp">Services </a>&nbsp;&nbsp;
+
 <a href=patientreg>Patient Registration</a>&nbsp;&nbsp;
 <a href="patientlogin">Patient Login</a>&nbsp;&nbsp;
 <a href="doctorreg">Doctor Registration</a>&nbsp;&nbsp;
