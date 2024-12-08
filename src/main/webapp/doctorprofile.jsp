@@ -22,6 +22,7 @@
            <p><strong>SALARY:</strong> <%=d.getSalary()%></p>
            <p><strong>CONTACT:</strong> <%=d.getContact()%></p>
            <p><strong>QUALIFICATION:</strong> <%=d.getQualification()%></p>
+           <p><strong>SPECIALITY:</strong> <%=d.getSpeciality()%></p>
            <p><strong>EXPERIENCE:</strong> <%=d.getExperience()%> Years</p>
        </div>
    </div>

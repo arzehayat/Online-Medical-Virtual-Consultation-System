@@ -19,11 +19,11 @@
    <div class="dashboard-container">
        <div class="card">
            <h3>Your Appointments</h3>
-           <a href="patientappointment.jsp">View Details</a>
+           <a href="yourAppointments">View Details</a>
        </div>
        <div class="card">
            <h3>Book Appointment</h3>
-           <a href="#">Book Now</a>
+           <a href="bookAppointment">Book Now</a>
        </div>
        <div class="card">
            <h3>Health Records</h3>

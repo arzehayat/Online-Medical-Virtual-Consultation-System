@@ -10,7 +10,7 @@
 <div class="navbar">
 <a href="doctorhome">Home</a>&nbsp;&nbsp;
 <a href="doctorprofile">My Profile</a>&nbsp;&nbsp;
-<a href="updateprofile">Update Profile</a>&nbsp;&nbsp;
+<a href="updatedoctor">Update Profile</a>&nbsp;&nbsp;
 <a href="doctorlogout">Logout</a>&nbsp;&nbsp;
 
 

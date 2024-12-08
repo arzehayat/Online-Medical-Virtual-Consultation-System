@@ -71,6 +71,7 @@ public class DoctorController {
 		String password=request.getParameter("dpwd");
 		double salary=Double.parseDouble(request.getParameter("dsalary"));
 		String contact=request.getParameter("dcontact");
+		String speciality = request.getParameter("dspeciality");
 		String qualification=request.getParameter("dqualification");
 		Integer experience=Integer.parseInt(request.getParameter("dexperience"));
 		String status="Registred";
@@ -84,6 +85,7 @@ public class DoctorController {
 		d.setSalary(salary);
 		d.setContact(contact);
 		d.setQualification(qualification);
+		d.setSpeciality(speciality);
 		d.setExperience(experience);
 		d.setStatus(status);
 		
@@ -136,6 +138,7 @@ public class DoctorController {
 		String password=request.getParameter("dpwd");
 		String contact=request.getParameter("dcontact");
 		String qualification=request.getParameter("dqualification");
+		String speciality=request.getParameter("dspeciality");
 		Integer experience=Integer.parseInt(request.getParameter("dexperience"));
 		String status="Registred";
 		
@@ -148,6 +151,7 @@ public class DoctorController {
 		d.setPassword(password);
 		d.setContact(contact);
 		d.setQualification(qualification);
+		d.setSpeciality(speciality);
 		d.setExperience(experience);
 		d.setStatus(status);
 		
@@ -161,12 +165,10 @@ public class DoctorController {
 		return mv;
 	}
 	
-	@GetMapping("updatepatient")
-	public ModelAndView updatepatient() {
-		
-		ModelAndView mv=new ModelAndView("updatepatient");
-		
-		return mv;
+	@GetMapping("updatedoctor")
+	public ModelAndView updatedoctor() {
+	    ModelAndView mv = new ModelAndView("updatedoctor");
+	    return mv;
 	}
 	
 	

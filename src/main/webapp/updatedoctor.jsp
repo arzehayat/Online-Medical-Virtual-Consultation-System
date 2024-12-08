@@ -72,6 +72,20 @@
                     </td>
                 </tr>
                 <tr>
+                
+   <tr>
+    <td><label for="dspeciality">Enter Speciality</label></td>
+    <td>
+        <select id="dspeciality" name="dspeciality" required>
+            <option value="" <%= d.getSpeciality().equals("") ? "selected" : "" %>>--Select Speciality--</option>
+            <option value="cardiologist" <%= d.getSpeciality().equalsIgnoreCase("cardiologist") ? "selected" : "" %>>Cardiologist</option>
+            <option value="neurologist" <%= d.getSpeciality().equalsIgnoreCase("neurologist") ? "selected" : "" %>>Neurologist</option>
+            <option value="orthopedic" <%= d.getSpeciality().equalsIgnoreCase("orthopedic") ? "selected" : "" %>>Orthopedic</option>
+            <option value="dentist" <%= d.getSpeciality().equalsIgnoreCase("dentist") ? "selected" : "" %>>Dentist</option>
+        </select>
+    </td>
+</tr>
+                
                     <td><label for="dexperience">Enter Experience Year</label></td>
                     <td><input type="number" id="dexperience" name="dexperience" value="<%=d.getExperience()%>" required/></td>
                 </tr>

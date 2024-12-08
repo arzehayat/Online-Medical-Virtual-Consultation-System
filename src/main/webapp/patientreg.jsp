@@ -7,7 +7,7 @@
     <title>Patient Registration</title>
 </head>
 <body>
-    <%@include file="adminnavbar.jsp" %>
+    <%@include file="mainnavbar.jsp" %>
     <h3 style="text-align: center;"> <u>Patient Registration Form</u></h3>
 
     <div class="form-container">

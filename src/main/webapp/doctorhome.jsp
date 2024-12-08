@@ -24,11 +24,11 @@
         </div>
         <div class="card">
             <h3>Appointments</h3>
-            <a href="doctorappointment.jsp">Manage Appointments</a>
+            <a href="doctorviewappoit">Manage Appointments</a>
         </div>
         <div class="card">
             <h3>Medical Records</h3>
-            <a href="#">View Medical Records</a>
+            <a href="medicalrecords.jsp">View Medical Records</a>
         </div>
     </div>
 

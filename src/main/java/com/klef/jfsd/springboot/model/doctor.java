@@ -41,10 +41,22 @@ public class doctor {
 	@Column(name="doctor_experience",nullable=false)
 	private int experience;
 	
+	@Column(name = "doctor_speciality", nullable = false, length = 100)
+    private String speciality;
+	
 	@Column(name="doctor_status",nullable=false,length=50)
 	private String status;
 	
 	
+	
+
+	public String getSpeciality() {
+		return speciality;
+	}
+
+	public void setSpeciality(String speciality) {
+		this.speciality = speciality;
+	}
 
 	public int getId() {
 		return id;

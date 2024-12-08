@@ -60,6 +60,19 @@
                         </select>
                     </td>
                 </tr>
+                
+                <tr>
+                    <td><label for="dspeciality">Enter Specialty</label></td>
+                    <td>
+                        <select id="dspeciality" name="dspeciality" required>
+                            <option value="">--Select Speciality--</option>
+                            <option value="cardiologist">Cardiologist</option>
+                            <option value="neurologist">Neurologist</option>
+                            <option value="orthopedic">Orthopedic</option>
+                            <option value="dentist">Dentist</option>
+                        </select>
+                    </td>
+                </tr>
                 <tr>
                     <td><label for="dexperience">Enter Experience Year</label></td>
                     <td><input type="number" id="dexperience" name="dexperience" required/></td>

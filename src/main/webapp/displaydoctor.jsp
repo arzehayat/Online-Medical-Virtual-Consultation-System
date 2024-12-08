@@ -22,6 +22,7 @@
            <p><strong>SALARY:</strong> <c:out value="${doctor.salary }"></c:out></p>
            <p><strong>CONTACT:</strong> <c:out value="${doctor.contact }"></c:out> </p>
            <p><strong>QUALIFICATION:</strong> <c:out value="${doctor.qualification }"></c:out></p>
+           <p><strong>SPECIALITY:</strong> <c:out value="${doctor.speciality}" /></p>           
            <p><strong>EXPERIENCE:</strong> <c:out value="${doctor.experience }"></c:out> Years</p>
        </div>
    </div>
